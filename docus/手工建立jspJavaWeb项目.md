@@ -1,6 +1,6 @@
 #### tomcat的目录如下：
 
-![1.1](pictures/1/1.1.png)
+![1.1](https://github.com/HuNanMan/notes-javaWeb-YanQun/blob/master/pictures/1/1.1.png)
 
 ********
 
@@ -38,7 +38,7 @@
 
 得到如下结果：
 
-![1.2](D:\xuexi\java\java_项目_网易云课堂资料\notes-javaWeb-YanQun\pictures\1\1.2.png)
+![1.2](https://github.com/HuNanMan/notes-javaWeb-YanQun/blob/master/pictures/1/1.2.png)
 
 ##### 若在浏览器中输入：localhost:8080
 
