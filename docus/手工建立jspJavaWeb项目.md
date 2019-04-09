@@ -1,6 +1,6 @@
 #### tomcat的目录如下：
 
-![1.1](D:\xuexi\java\java_项目_网易云课堂资料\notes-javaWeb-YanQun\pictures\1\1.1.png)
+![1.1]pictures/1/1.1.png)
 
 ********
 
