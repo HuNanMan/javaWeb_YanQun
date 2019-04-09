@@ -1,4 +1,4 @@
-#### tomcat的目录如下：
+### tomcat的目录如下：
 
 ![1.1](https://github.com/HuNanMan/notes-javaWeb-YanQun/blob/master/pictures/1/1.1.png)
 
@@ -19,14 +19,12 @@
 #### 2. 在demo01目录下，创建index.jsp文件，默认会访问这个名字的文件。比如如下：
 
 ```jsp
-
 <html>
-
 　　	<head> 
 　　　	　<title>ppp</title>
-　	</head>
-	<body>
-　　	kkkkdd
+　	 </head>
+	 <body>
+　　		kkkkdd
 　　		<%
 　　　		　out.print("hello world!");
 　　		%>
@@ -54,7 +52,6 @@
 * 修改对应项目的web.xml文件。如输入localhost:8080，则要修改ROOT目录下的WEB-INFO下的web.xml文件；其他项目修改它的项目目录下WEB-INFO目录下的web.xml即可。
 
 * 修改方法为，在web.xml中增加如下内容：（按照自己的需求稍作修改即可）
-
 				```xml
 						<welcome-file-list>
 							<welcome-file>index.html</welcome-file>
@@ -62,7 +59,7 @@
 							<welcome-file>index.htm</welcome-file>
 							<welcome-file>index.jsp</welcome-file>
 						</welcome-file-list>
-	```
+				```
 
 * 这段代码的意思是，设置进入这个目录的默认初始页面，有index.html就打开，没有就往下找。
 
@@ -119,11 +116,11 @@ apache-tomcat-xxx\conf\Catalina\localhost
 
 ### 虚拟主机：
 
-**目标**：通过www.test.com访问D:\study\JspProject。
+**目标**：通过 www.test.com访问D:\study\JspProject。
 
  
 
-a. 修改conf/server.xml
+**①. 修改conf/server.xml**
 
 把这句修改成这样:
 ```xml
@@ -137,7 +134,7 @@ a. 修改conf/server.xml
 ```
 
 
-b.C:\Windows\System32\drivers\etc\host增加下面这句：
+**②.C:\Windows\System32\drivers\etc\host增加下面这句：**
 		_127.0.0.1 www.test.com_
 
 由于浏览器默认访问80端口，
@@ -148,11 +145,11 @@ b.C:\Windows\System32\drivers\etc\host增加下面这句：
 
  
 
-c.继续修改conf/server.xml
+**③.继续修改conf/server.xml**
 ```xml
 <Connector port="80" protocol="HTTP/1.1"
 　　connectionTimeout="20000"
 　　redirectPort="8443" />
 ```
 
-d:此时终于可以直接在浏览器输入www.test.com访问jspProject了。
+**④:此时终于可以直接在浏览器输入www.test.com访问jspProject了。**
