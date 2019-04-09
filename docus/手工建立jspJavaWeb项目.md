@@ -152,4 +152,3 @@ apache-tomcat-xxx\conf\Catalina\localhost
 　　redirectPort="8443" />
 ```
 
-**④:此时终于可以直接在浏览器输入www.test.com访问jspProject了。**
