@@ -1,6 +1,6 @@
 #### tomcat的目录如下：
 
-![1.1]pictures/1/1.1.png)
+![1.1](pictures/1/1.1.png)
 
 ********
 
