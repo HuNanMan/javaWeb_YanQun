@@ -145,7 +145,7 @@ apache-tomcat-xxx\conf\Catalina\localhost
 
 并增加下面这段：
 ```xml
-	<Host appBase="D:\study\JspProject" name="www.test.com"><Context docBase="D:\study\JspProject" path="/"/></Host>*
+<Host appBase="D:\study\JspProject" name="www.test.com"><Context docBase="D:\study\JspProject" path="/"/></Host>*
 
 ```
 
@@ -167,4 +167,4 @@ apache-tomcat-xxx\conf\Catalina\localhost
 　　connectionTimeout="20000"
 　　redirectPort="8443" />
 ```
-**完**
+### **完**
