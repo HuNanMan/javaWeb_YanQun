@@ -42,9 +42,14 @@
 
 ​     **注意**：
 
-* 在ie中直接这样输入会进入搜索引擎,必须完整输入：http://localhost:8080
-* 在chrome，它会自动加上http://，可以进入tomcat首页，也就是默认进入apache-tomcat-xxx\webapps\ROOT，打开默认的index.jsp。
-
+* 在ie中直接这样输入会进入搜索引擎,必须完整输入：
+```
+http://localhost:8080
+```
+* 在chrome，它会自动加上
+```
+http://，可以进入tomcat首页，也就是默认进入apache-tomcat-xxx\webapps\ROOT，打开默认的index.jsp。
+```
 
 
 #### 如果想把默认文件从index.jsp修改为其他页面文件，可以如下设置：
@@ -53,12 +58,12 @@
 
 * 修改方法为，在web.xml中增加如下内容：（按照自己的需求稍作修改即可）
 				```xml
-						<welcome-file-list>
-							<welcome-file>index.html</welcome-file>
-							<welcome-file>index.xhtml</welcome-file>
-							<welcome-file>index.htm</welcome-file>
-							<welcome-file>index.jsp</welcome-file>
-						</welcome-file-list>
+					<welcome-file-list>
+						<welcome-file>index.html</welcome-file>
+						<welcome-file>index.xhtml</welcome-file>
+						<welcome-file>index.htm</welcome-file>
+						<welcome-file>index.jsp</welcome-file>
+					</welcome-file-list>
 				```
 
 * 这段代码的意思是，设置进入这个目录的默认初始页面，有index.html就打开，没有就往下找。
@@ -67,9 +72,16 @@
 
 ## 虚拟路径：
 
-* 在浏览器中输入：http://localhost:8080，它实际打开的是服务器中 webapps\ROOT，也就是说进入服务器根目录时，自动转入webapps，因为没有指定项目名，所以默认访问ROOT项目。这是虚拟路径的例子。
+* 在浏览器中输入：
+```
+http://localhost:8080，
+```
+它实际打开的是服务器中 webapps\ROOT，也就是说进入服务器根目录时，自动转入webapps，因为没有指定项目名，所以默认访问ROOT项目。这是虚拟路径的例子。
 
-* 假如我们输入：http://localhost:8080/demo01/，也就是说进入demo01项目，而demo01项目没在webapps目录下，我们可以利用虚拟路径技术，自动转向其他路径。
+* 假如我们输入：
+```
+http://localhost:8080/demo01/，也就是说进入demo01项目，而demo01项目没在webapps目录下，我们可以利用虚拟路径技术，自动转向其他路径。
+```
 
 我们可以修改配置文件，访问在webapps以外的目录中的web项目。
 
@@ -97,7 +109,9 @@ Note: The pattern used is equivalent to using pattern="common" -->
 <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
 prefix="localhost_access_log." suffix=".txt"
 pattern="%h %l %u %t &quot;%r&quot; %s %b" />
-<Context docBase="D:\tomcat\apache-tomcat-7.0.56\demo01" path="/demo01" /><!--插入这段代码.从/demo01转入D:\tomcat\apache-tomcat-7.0
+	
+<!--插入这段代码.从/demo01转入D:\tomcat\apache-tomcat-7.0
+<Context docBase="D:\tomcat\apache-tomcat-7.0.56\demo01" path="/demo01" />
 ```
 
 
@@ -116,9 +130,11 @@ apache-tomcat-xxx\conf\Catalina\localhost
 
 ### 虚拟主机：
 
-**目标**：通过 www.test.com访问D:\study\JspProject。
+**目标**：
+```
+通过 www.test.com访问D:\study\JspProject。
+```
 
- 
 
 **①. 修改conf/server.xml**
 
@@ -135,14 +151,14 @@ apache-tomcat-xxx\conf\Catalina\localhost
 
 
 **②.C:\Windows\System32\drivers\etc\host增加下面这句：**
+```
 		_127.0.0.1 www.test.com_
+```
 
 由于浏览器默认访问80端口，
-
+```
 *此时可以通过www.test.com:8080访问JspProject。*
-
- 
-
+```
  
 
 **③.继续修改conf/server.xml**
@@ -151,4 +167,4 @@ apache-tomcat-xxx\conf\Catalina\localhost
 　　connectionTimeout="20000"
 　　redirectPort="8443" />
 ```
-
+**完**
