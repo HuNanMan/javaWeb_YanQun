@@ -20,3 +20,9 @@
 
 3. [使用request对象实现注册示例，getpost的编码问题](docus/使用request对象实现注册示例，getpost的编码问题.md)
 
+
+
+### TIPS
+
+1. [github的md文件中网址自动超链接的解决办法](docus/github中md文件网址自动超链接的解决办法.md)
+
