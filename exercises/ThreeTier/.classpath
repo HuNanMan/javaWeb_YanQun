@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="src/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="src/servlet-api.jar" sourcepath="D:/360MoveData/Users/CQcoming/Desktop/apache-tomcat-7.0.94-src.zip"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
